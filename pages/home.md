@@ -49,7 +49,7 @@ GROUP BY Date
 
 ```sql cohort_data
 SELECT
-  toStartOfMonth(`Under Contract Date`) as contract_month,
+  toDate(`Under Contract Date`) as contract_month,
   IF(dateDiff('day', `Lead Created Date`, `Under Contract Date`) <= 60, 'New Lead Deal', 'Follow-up Deal') as cohort,
   count(*) as deals,
   toDate(`Lead Created Date`) as Date
