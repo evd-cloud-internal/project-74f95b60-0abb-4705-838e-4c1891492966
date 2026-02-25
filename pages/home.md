@@ -73,6 +73,9 @@ ORDER BY contract_month, cohort
     date="Date"
     range={{date_filter}}
   }
+  fmt="num0"
+  y_fmt="num0"
+  date_grain="week"
   chart_options={
     series_colors={
       "New Lead Deal"="#22c55e"
