@@ -145,6 +145,10 @@ SELECT stage, stage_order, count, Date FROM (
   show_percent=true
   align="center"
   order="stage_order"
+  value_fmt="num0"
+  min_size="5%"
+  legend_location="bottom"
+  label_position="outside"
   date_range={
     date="Date"
     range={{date_filter}}
